@@ -1,0 +1,81 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgb(19, 21, 25);
+  color: #fff;
+}
+.activeLink {
+  border-bottom: 2px solid #c6ff41; 
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLinks a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.bar,
+.barOpen {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navLinks {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    max-width: 250px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(53, 62, 74);
+    padding: 1rem;
+    display: none;
+    gap: 1rem;
+  }
+
+  .navLinks.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .barOpen {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .barOpen:nth-child(2) {
+    opacity: 0;
+  }
+
+  .barOpen:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}

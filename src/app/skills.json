@@ -1,0 +1,13 @@
+[
+  { "title": "HTML", "percentage": "90%" },
+  { "title": "CSS", "percentage": "80%" },
+  { "title": "JavaScript", "percentage": "80%" },
+  { "title": "Bootstrap", "percentage": "80%" },
+  { "title": "UI/UX", "percentage": "80%" },
+
+  { "title": "Typescript", "percentage": "60%" },
+  { "title": "Tailwind CSS", "percentage": "70%" },
+  { "title": "React", "percentage": "60%" },
+  { "title": "Next JS", "percentage": "60%" },
+  { "title": "AOS", "percentage": "90%" }
+]

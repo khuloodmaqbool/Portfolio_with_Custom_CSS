@@ -1,0 +1,63 @@
+.main_div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.img_div {
+  margin-bottom: 10px;
+  border-radius: 15px;
+  height: 250px;
+}
+.card {
+  margin: 20px;
+  border: 0.5px solid #c6ff41;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgb(19, 21, 25);
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 5px 0px;
+  font-family: "Anybody";
+}
+.main_heading {
+  font-weight: bolder;
+  font-family: "Anybody";
+  font-size: 4cqmax;
+  color: white;
+}
+
+.visit_btn {
+  background-color: rgba(198, 255, 65, 1);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.git_link {
+  border: 1px solid #32314c;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+}
+.btn_link_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 1200px) {
+  .main_div {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .main_div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .main_div {
+    grid-template-columns: 1fr;
+  }
+}

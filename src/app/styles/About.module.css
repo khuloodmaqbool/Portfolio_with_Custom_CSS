@@ -1,0 +1,36 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.image {
+  margin: auto;
+  width: 70%;
+}
+.img_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  font-weight: bolder;
+  color: white;
+  font-size: 4cqmax;
+  font-family: "Anybody";
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .image {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .image {
+    width: 60%;
+  }
+}
